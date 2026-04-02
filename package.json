@@ -6,14 +6,17 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "build-offline": "node scripts/make-offline.js"
+    "build-offline": "node scripts/make-offline.js",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "vite": "^5.0.0",
-    "esbuild": "^0.18.17"
+    "@vitejs/plugin-react": "^4.7.0",
+    "esbuild": "^0.18.17",
+    "gh-pages": "^6.3.0",
+    "vite": "^5.0.0"
   }
 }
