@@ -1,5 +1,5 @@
 import React from 'react'
-import Spreadsheet from './components/Spreadsheet'
+import Register from './components/Register'
 
 export default function App() {
   return (
@@ -8,7 +8,7 @@ export default function App() {
         <h1>Pinewood Derby Scoring</h1>
       </header>
       <main>
-        <Spreadsheet />
+        <Register />
       </main>
     </div>
   )

@@ -160,3 +160,53 @@ td {
   color: var(--muted);
   margin-top: 8px;
 }
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.25em;
+  white-space: nowrap;
+}
+
+.number-input.error {
+  border-color: red;
+  background-color: #ffe6e6;
+}
+
+.name-input.error {
+  border-color: red;
+}
+
+.group-input {
+  width: 20em;
+  max-width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.combobox-container {
+  grid-column: 2;
+  position: relative;
+}
+
+.combobox-options {
+  position: absolute;
+  z-index: 10;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.combobox-option {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.combobox-option:hover {
+  background: #f0f0f0;
+}
